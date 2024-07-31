@@ -44,9 +44,9 @@ const AboutSection = () => {
   return (
     <Section>
       <h1 className="text-6xl font-extrabold leading-snug">
-        Hi, I'm
+        Hola, Mi nombre es 
         <br />
-        <span className="bg-white px-1 italic">Wawa Sensei</span>
+        <span className="bg-white px-1 italic">Juan Quintero</span>
       </h1>
       <motion.p
         className="text-lg text-gray-600 mt-4"
@@ -63,9 +63,9 @@ const AboutSection = () => {
           delay: 1.5,
         }}
       >
-        I make YouTube videos to help developers
+        Soy el ceo y Fundador de la primera Comunidad De Programadores En Colombia
         <br />
-        learn how to build 3D apps
+        Y toda Latinoamerica
       </motion.p>
       <motion.button
         className={`bg-indigo-600 text-white py-4 px-8 
@@ -83,7 +83,7 @@ const AboutSection = () => {
           delay: 2,
         }}
       >
-        Contact me
+        Contactame!
       </motion.button>
     </Section>
   );
@@ -113,7 +113,7 @@ const skills = [
 ];
 const languages = [
   {
-    title: "🇫🇷 French",
+    title: "ES Españok",
     level: 100,
   },
   {
@@ -174,7 +174,7 @@ const SkillsSection = () => {
           ))}
         </div>
         <div>
-          <h2 className="text-5xl font-bold mt-10">Languages</h2>
+          <h2 className="text-5xl font-bold mt-10">Leguajes</h2>
           <div className=" mt-8 space-y-4">
             {languages.map((lng, index) => (
               <div className="w-64" key={index}>
@@ -226,11 +226,11 @@ const SkillsSection = () => {
 const ContactSection = () => {
   return (
     <Section>
-      <h2 className="text-5xl font-bold">Contact me</h2>
+      <h2 className="text-5xl font-bold">Contactame!</h2>
       <div className="mt-8 p-8 rounded-md bg-white w-96 max-w-full">
         <form>
           <label for="name" className="font-medium text-gray-900 block mb-1">
-            Name
+            Nombre
           </label>
           <input
             type="text"
@@ -242,7 +242,7 @@ const ContactSection = () => {
             for="email"
             className="font-medium text-gray-900 block mb-1 mt-8"
           >
-            Email
+            Correo
           </label>
           <input
             type="email"
@@ -254,7 +254,7 @@ const ContactSection = () => {
             for="email"
             className="font-medium text-gray-900 block mb-1 mt-8"
           >
-            Message
+            Mensaje
           </label>
           <textarea
             name="message"
@@ -262,7 +262,7 @@ const ContactSection = () => {
             className="h-32 block w-full rounded-md border-0 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 p-3"
           />
           <button className="bg-indigo-600 text-white py-4 px-8 rounded-lg font-bold text-lg mt-16 ">
-            Submit
+            Enviar
           </button>
         </form>
       </div>
